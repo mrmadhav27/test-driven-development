@@ -1,9 +1,11 @@
 function returnsThree() {
-  // Your code here
+  return 3;
 }
 
 function reciprocal(n) {
-  // Your code here
+  if (n < 1) throw TypeError("Number should be greater than 0");
+  if (n > 1000000) throw TypeError("Number should be less than 1000000")
+  return 1 / n;
 }
 
 module.exports = {
